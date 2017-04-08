@@ -1,0 +1,14 @@
+<table class="table table-striped">
+	<tr>
+		<td>#</td>
+		<td>Title</td>
+		<td>Content</td>
+	</tr>
+	<% @posts.each do |post| %>
+		<tr>
+			<td></td>
+			<td><%= post.title %></td>
+			<td><%= link_to post.content , post_path(post) %></td>
+		</tr>
+	<% end %>
+</table>
