@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+	def about
+		render 'posts/about'
+	end
 	def index
 		@posts = Post.all
 	end
