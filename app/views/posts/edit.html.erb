@@ -1,6 +1,4 @@
-<%= form_for @post do |f| %>
-<%= f.label :title, "Title" %>
-<%= f.text_field :title %>
-<%= f.label :content, "Content" %>
-<%= f.text_area :content %><%= f.submit "Edit" %>
-<% end %>
+<div class="page-header">
+  <h1>Edit Post</h1>
+</div>
+<%= render "common/form" %>
